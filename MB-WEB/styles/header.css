@@ -41,3 +41,36 @@
     align-items: center;
     margin-right: 10px;
 }
+
+a{
+    text-decoration: none;
+    color: white
+}
+
+#drop-list li {
+    margin-bottom: 20px;
+}
+
+#drop-list{
+    background-color: var(--mbcolor);
+    list-style-type: none;
+
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+
+    text-align: center;
+    margin:0px;
+
+    display: flex;
+    flex-direction: column;
+    top:70px;
+    left:0;
+    right:0;
+
+    position: fixed;
+    z-index: 200;
+
+    transition: height .5s , opacity .3s;
+
+}
