@@ -1,0 +1,89 @@
+a{
+    text-decoration: none;
+    color: white
+}
+
+#drop-list li {
+    margin-bottom: 20px;
+}
+
+#drop-list{
+    background-color: var(--mbcolor);
+    list-style-type: none;
+
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+
+    text-align: center;
+    margin:0px;
+
+    display: flex;
+    flex-direction: column;
+    left:0;
+    right:0;
+
+    position: fixed;
+    z-index: 200;
+
+    transition: height .5s, opacity .5s;
+
+}
+
+.presentation {
+    position: relative;
+    margin-top: 0px;
+}
+
+.UNtitle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+
+}
+
+.unpasteurized,
+.unfiltered,
+.unforgettable {
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--mbcolor);
+
+    margin: 0px;
+
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.slogan {
+    margin-top: 10px;
+}
+
+.slogan1,
+.slogan2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--mbcolor);
+
+    margin: 0px;
+
+    text-align: center;
+}
+
+
+.bottle-tops {
+    width: 100%;
+}
+
+.temporary-middle {
+    background-color: red;
+    height: 1000px;
+}
+
+.contact {
+    margin-top: 30px;
+    background-color: aqua;
+    height: 200px;
+}
