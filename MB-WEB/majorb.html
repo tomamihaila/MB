@@ -6,13 +6,14 @@
     <link rel="shortcut icon" href="icons/MB_logo.ico">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/burger.css">
+    <link rel="stylesheet" href="styles/despre.css">
 
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="left-section">
             <img class="logo" src="images/MB_logo.png">
             <p class="name">Major Bootleg</p>
@@ -24,16 +25,22 @@
         </div>
 
         <ul id="drop-list">
-            <li>Acasă</li>
-            <li>Despre bere</li>
-            <li>Berile noastre</li>
-            <a id="contact-link">
+            <a id="acasa-link">
+                <li>Acasă</li>
+            </a>
+            <a id="despre-link">
+                <li>Despre bere</li>
+            </a>
+            <a id="berile-link">
+                <li>Berile noastre</li>
+            </a>
+            <a id="contact-link" href="#contact">
                 <li>Contact</li>
             </a>
         </ul>
     </header>
 
-    <main class="main">
+    <div id="acasa" class="acasa">
         <div class="presentation">
             <img class="bottle-tops" src="images/bottle-tops7.png">
             <div class="UNtitle">
@@ -47,6 +54,7 @@
             </div>
 
         </div>
+
         <div class="despre">
             <p class="despre-titlu">Despre noi</p>
             <p class="despre-descriere">Undeva prin 2019, din pasiunea pentru bere și din dorința de a bea ceva cu
@@ -54,13 +62,65 @@
                 adevărat artizanală de la studenți, pentru studenți.</p>
         </div>
 
-        <div id="contact" class="contact">
+        <div class="incomplet" style="height:500px;">
 
         </div>
 
-    </main>
+        <div id="contact" class="contact">
+            <p class="contact-titlu"> Contactează-ne</p>
+            <p onclick="copyToClip('mail')" id="mail" class="mail">major.bootleg.brewery@gmail.com</p>
+            <div class="contact-icon-grid">
+                <a href="https://www.facebook.com/major.bootleg" target="_blank">
+                    <img class="contact-icon" src="icons/facebook-logo.png" />
+                </a>
+                <a href="https://www.instagram.com/major.bootleg/" target="_blank">
+                    <img class="contact-icon" src="icons/instagram-logo.png" />
+                </a>
+            </div>
+            <div class="copyright-div">
+                <p class="copyright">© Copyright 2022 Major Bootleg. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="despre-bere" class="despre-bere">
+        <div class="ale-lager-grid">
+            <div class="ale-lager">
+                <div class="ale-lager-icon">
+                    <img class="beer-glass" src="images/beer-glass.png">
+                </div>
+                <div class="ale-lager-info">
+                    <p class="a-l-title">Ales</p>
+                    <p class="a-l-description">Ale-urile sunt beri mai complexe, mai fructate și mai cremoase
+                        decât lager-urile. Gustul lor este unul aromat.</p>
+                    <button class="a-l-button">Subtipuri</button>
+                </div>
+            </div>
+            <div class="ale-lager">
+                <div class="ale-lager-icon">
+                    <img class="beer-glass" src="images/beer-glass.png">
+                </div>
+                <div class="ale-lager-info">
+                    <p class="a-l-title">Lagers</p>
+                    <p class="a-l-description">Lager-urile sunt beri mai ușoare și mai limpeze decât ale-urile. Gustul
+                        lor este unul curat.</p>
+                    <button class="a-l-button">Subtipuri</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="berile-noastre" class="berile-noastre" style="display: none; background-color: red; height: 500px;">
+
+    </div>
+
+
 
     <script src="js_code/events.js"></script>
+    <script src="js_code/functions.js"></script>
 </body>
 
 </html>
