@@ -1,0 +1,116 @@
+.presentation {
+    position: relative;
+    margin-top: 0px;
+}
+
+.UNtitle {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 18%;
+
+}
+
+.unpasteurized,
+.unfiltered,
+.unforgettable {
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--mbcolor);
+
+    margin: 0px;
+
+    text-align: center;
+    white-space: nowrap;
+
+}
+
+.slogan {
+    margin-top: 10px;
+}
+
+.slogan1,
+.slogan2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--mbcolor);
+
+    margin: 0px;
+
+    text-align: center;
+}
+
+
+.bottle-tops {
+    width: 100%;
+}
+
+.despre, .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.despre-titlu, .contact-titlu{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.contact-titlu{
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+.despre-descriere, .mail, .copyright{
+    font-size:18px;
+    font-weight: 100;
+    color:white;
+    text-align: center;
+
+}
+
+.despre-descriere{
+    width: 700px;
+}
+
+.mail{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.mail:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.copyright{
+    font-size: 15px;
+    margin-bottom: 15px;
+
+}
+
+.contact {
+    margin-top: 30px;
+    height: 200px;
+
+}
+
+.contact-icon-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+
+    margin-bottom: 10px;
+}
+
+.contact-icon{
+    height: 50px;
+    transition: opacity .15s;
+}
+
+.contact-icon:hover{
+    opacity: 0.5;
+}
+
+

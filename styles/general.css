@@ -1,0 +1,13 @@
+:root {
+    --mbcolor: #3E4020;
+}
+
+body {
+    background-color: var(--mbcolor);
+    font-family: sans-serif;
+    
+    /* height: 3000px; */
+    margin: 0px;
+    margin-top:70px;
+    
+}

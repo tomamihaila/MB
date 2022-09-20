@@ -1,0 +1,85 @@
+.header {
+    height: 70px;
+    background-color: var(--mbcolor);
+
+    border: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 100;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 10px;
+}
+
+.logo {
+    height: 65px;
+}
+
+.name {
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: .15s;
+}
+
+a:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+
+#drop-list li {
+    margin-bottom: 20px;
+}
+
+#drop-list{
+    overflow: hidden;
+
+    background-color: var(--mbcolor);
+    list-style-type: none;
+
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+
+    text-align: center;
+    margin:0px;
+
+    display: flex;
+    flex-direction: column;
+    top:70px;
+    left:0;
+    right:0;
+
+    position: fixed;
+    z-index: 200;
+
+    transition: height .5s , opacity .3s;
+
+}
