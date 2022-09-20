@@ -1,0 +1,64 @@
+.al-grid{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    row-gap: 20px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.al-beer{
+    height: 200px;
+    width: 500px;
+    background-color: white;
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.al-icon{
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.al-beer-glass{
+    height: 120px;
+}
+
+.al-info{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.al-title{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.al-description{
+    width: 300px;
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+
+    margin-top:10px;
+    margin-bottom: 20px;
+}

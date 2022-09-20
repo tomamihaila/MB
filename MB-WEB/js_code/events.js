@@ -36,6 +36,9 @@ acasaLink.addEventListener('click', () => {
     despreBere.style.display = 'none';
     berileNoastre.style.display = 'none';
 
+    ales.style.display = 'none';
+    lagers.style.display = 'none';
+
     dropList.style.height = '0px';
     dropList.style.opacity = '0';
 
@@ -48,6 +51,9 @@ despreLink.addEventListener('click', () => {
     despreBere.style.display = 'block';
     acasa.style.display = 'none';
     berileNoastre.style.display = 'none';
+
+    ales.style.display = 'none';
+    lagers.style.display = 'none';
 
     dropList.style.height = '0px';
     dropList.style.opacity = '0';
@@ -62,6 +68,9 @@ berileLink.addEventListener('click', () => {
     acasa.style.display = 'none';
     despreBere.style.display = 'none';
 
+    ales.style.display = 'none';
+    lagers.style.display = 'none';
+
     dropList.style.height = '0px';
     dropList.style.opacity = '0';
 
@@ -75,8 +84,30 @@ contactLink.addEventListener('click', () => {
     despreBere.style.display = 'none';
     berileNoastre.style.display = 'none';
 
+    ales.style.display = 'none';
+    lagers.style.display = 'none';
+
     dropList.style.height = '0px';
     dropList.style.opacity = '0';
 
 });
 
+const ales = document.getElementById('ales');
+const lagers = document.getElementById('lagers');
+
+ales.style.display = 'none';
+lagers.style.display = 'none';
+
+const openSubtypes = (beerType) => {
+
+    despreBere.style.display = 'none';
+    ales.style.display = 'none';
+    lagers.style.display = 'none';
+
+    if (beerType === 'ales') {
+        ales.style.display = 'block';
+    } else if (beerType === 'lagers') {
+        lagers.style.display = 'block';
+    }
+
+}

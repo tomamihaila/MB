@@ -22,6 +22,8 @@
 
     border-radius: 5px;
 
+    /* clip-path: polygon(10% 0, 90% 0, 75% 100%, 25% 100%); */
+
 }
 
 .ale-lager-icon {
