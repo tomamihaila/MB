@@ -101,13 +101,12 @@ lagers.style.display = 'none';
 const openSubtypes = (beerType) => {
 
     despreBere.style.display = 'none';
-    ales.style.display = 'none';
-    lagers.style.display = 'none';
+    beerType.style.display='block';
 
-    if (beerType === 'ales') {
-        ales.style.display = 'block';
-    } else if (beerType === 'lagers') {
-        lagers.style.display = 'block';
-    }
+}
 
+const goBack  = (beerType) => {
+
+    beerType.style.display='none';
+    despreBere.style.display='block';
 }

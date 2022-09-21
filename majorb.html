@@ -95,7 +95,7 @@
                     <p class="a-l-title">Ales</p>
                     <p class="a-l-description">Ale-urile sunt beri mai complexe, mai fructate și mai cremoase
                         decât lager-urile. Gustul lor este unul aromat.</p>
-                    <button class="a-l-button" onclick="openSubtypes('ales')">Subtipuri</button>
+                    <button class="a-l-button" onclick="openSubtypes(ales)">Subtipuri</button>
                 </div>
             </div>
             <div class="ale-lager">
@@ -106,14 +106,19 @@
                     <p class="a-l-title">Lagers</p>
                     <p class="a-l-description">Lager-urile sunt beri mai ușoare și mai limpeze decât ale-urile. Gustul
                         lor este unul curat.</p>
-                    <button class="a-l-button" onclick="openSubtypes('lagers')">Subtipuri</button>
+                    <button class="a-l-button" onclick="openSubtypes(lagers)">Subtipuri</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="ales" class="beerTypes">
+    <div id="ales" class="beer-types">
         <div class="al-grid">
+            <div class="al-back-button">
+                <div class="al-arrow" onclick="goBack(ales)">
+                    <div class="arrow"></div>
+                </div>
+            </div>
             <div class="al-beer">
                 <div class="al-icon">
                     <img class="al-beer-glass" src="images/beer-glass.png">
@@ -147,8 +152,13 @@
         </div>
     </div>
 
-    <div id="lagers" class="beerTypes">
+    <div id="lagers" class="beer-types">
         <div class="al-grid">
+            <div class="al-back-button">
+                <div class="al-arrow" onclick="goBack(lagers)">
+                    <div class="arrow"></div>
+                </div>
+            </div>
             <div class="al-beer">
                 <div class="al-icon">
                     <img class="al-beer-glass" src="images/beer-glass.png">
@@ -184,14 +194,10 @@
             </div>
         </div>
     </div>
-
-
-
 
     <div id="berile-noastre" class="berile-noastre" style="display: none; background-color: red; height: 500px;">
 
     </div>
-
 
 
     <script src="js_code/events.js"></script>
