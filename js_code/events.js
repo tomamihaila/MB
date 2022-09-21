@@ -29,6 +29,15 @@ wrapper.addEventListener('click', () => {
     }
 });
 
+const home = ()=>{
+    acasa.style.display = 'block';
+    despreBere.style.display = 'none';
+    berileNoastre.style.display = 'none';
+
+    ales.style.display = 'none';
+    lagers.style.display = 'none';
+}
+
 acasaLink.addEventListener('click', () => {
     wrapper.classList.toggle('open');
 
